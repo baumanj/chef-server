@@ -72,16 +72,6 @@ do_build() {
 
 }
 
-do_unpack() {
-  do_default_unpack
-  build_line "in do_unpack"
-  set -x
-  cd $HAB_CACHE_SRC_PATH
-  wget $lpeg_source
-  build_line "tar version: $(tar --version)"
-  tar -xzf lpeg-${lpeg_version}.tar.gz --owner=$(id -u) --group=$(id -g)
-}
-
 do_install() {
   make install
   fix_interpreter "$pkg_prefix/bin/*" core/coreutils bin/env
