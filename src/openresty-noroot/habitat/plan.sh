@@ -1,5 +1,5 @@
 pkg_name=openresty-noroot
-pkg_origin=chef-server
+pkg_origin=jbauman
 pkg_version=1.11.2.5
 pkg_description="Scalable Web Platform by Extending NGINX with Lua"
 pkg_maintainer="The Chef Server Maintainers <support@chef.io>"
